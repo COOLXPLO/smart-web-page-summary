@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Page Summary</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Smart Page Summary</h1>
+    </header>
+
+    <main>
+      <div id="status" class="muted">Open an article page and click <strong>Summarize Page</strong>.</div>
+
+      <div class="controls">
+        <button id="summarize" class="primary">Summarize Page</button>
+        <button id="copy" class="secondary" title="Copy summary" disabled>Copy</button>
+        <button id="download" class="secondary" title="Download" disabled>Download</button>
+      </div>
+
+      <div id="summary" class="summary"></div>
+
+      <details class="notes">
+        <summary>Notes</summary>
+        <ul>
+          <li>Replace the placeholder fetch in <code>popup.js</code> with your real Chrome AI API call or server endpoint.</li>
+          <li>The extension extracts visible page text and sends it to the summarizer.</li>
+        </ul>
+      </details>
+    </main>
+
+    <footer>
+      <small>Made by IAmunknown77 — MIT License</small>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
